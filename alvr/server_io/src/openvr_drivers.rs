@@ -55,10 +55,10 @@ fn get_driver_dir_from_registered() -> StrResult<PathBuf> {
             return Ok(dir);
         }
     }
-    fmt_e!("ALVR driver path not registered")
+    fmt_e!("Well-Link XR driver path not registered")
 }
 
 pub fn get_driver_dir() -> StrResult<PathBuf> {
     get_driver_dir_from_registered()
-        .map_err(|e| format!("ALVR driver path not stored and not registered ({e})"))
+        .map_err(|e| format!("Well-Link XR driver path not stored and not registered ({e})"))
 }

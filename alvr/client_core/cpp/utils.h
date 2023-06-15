@@ -7,15 +7,15 @@
 
 #define LOGI(...)                                                                                  \
     do {                                                                                           \
-        __android_log_print(ANDROID_LOG_INFO, "[ALVR Native]", __VA_ARGS__);                         \
+        __android_log_print(ANDROID_LOG_INFO, "[Well-Link-XR Native]", __VA_ARGS__);                         \
     } while (false)
 #define LOGE(...)                                                                                  \
     do {                                                                                           \
-        __android_log_print(ANDROID_LOG_ERROR, "[ALVR Native]", __VA_ARGS__);                        \
+        __android_log_print(ANDROID_LOG_ERROR, "[Well-Link-XR Native]", __VA_ARGS__);                        \
     } while (false)
 #define LOGD(...)                                                                                  \
     do {                                                                                           \
-        __android_log_print(ANDROID_LOG_DEBUG, "[ALVR Native]", __VA_ARGS__);                        \
+        __android_log_print(ANDROID_LOG_DEBUG, "[Well-Link-XR Native]", __VA_ARGS__);                        \
     } while (false)
 
 static const char *GlErrorString(GLenum error) {

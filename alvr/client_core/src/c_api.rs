@@ -115,17 +115,17 @@ pub unsafe extern "C" fn alvr_path_string_to_id(path: *const c_char) -> u64 {
 pub unsafe extern "C" fn alvr_log(level: AlvrLogLevel, message: *const c_char) {
     let message = CStr::from_ptr(message).to_str().unwrap();
     match level {
-        AlvrLogLevel::Error => error!("[ALVR NATIVE] {message}"),
-        AlvrLogLevel::Warn => warn!("[ALVR NATIVE] {message}"),
-        AlvrLogLevel::Info => info!("[ALVR NATIVE] {message}"),
-        AlvrLogLevel::Debug => debug!("[ALVR NATIVE] {message}"),
+        AlvrLogLevel::Error => error!("[Well-Link XR NATIVE] {message}"),
+        AlvrLogLevel::Warn => warn!("[Well-Link XR NATIVE] {message}"),
+        AlvrLogLevel::Info => info!("[Well-Link XR NATIVE] {message}"),
+        AlvrLogLevel::Debug => debug!("[Well-Link XR NATIVE] {message}"),
     }
 }
 
 #[no_mangle]
 pub unsafe extern "C" fn alvr_log_time(tag: *const c_char) {
     let tag = CStr::from_ptr(tag).to_str().unwrap();
-    error!("[ALVR NATIVE] {tag}: {:?}", Instant::now());
+    error!("[Well-Link XR NATIVE] {tag}: {:?}", Instant::now());
 }
 
 /// On non-Android platforms, java_vm and constext should be null.

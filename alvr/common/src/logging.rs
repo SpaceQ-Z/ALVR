@@ -50,7 +50,7 @@ pub fn set_panic_hook() {
 
         #[cfg(windows)]
         std::thread::spawn(move || {
-            msgbox::create("ALVR panicked", &err_str, msgbox::IconType::Error).ok();
+            msgbox::create("Well-Link XR panicked", &err_str, msgbox::IconType::Error).ok();
         });
     }))
 }
@@ -64,7 +64,7 @@ pub fn show_w<W: Display>(w: W) {
         let warn_string = w.to_string();
         move || {
             msgbox::create(
-                "ALVR encountered a non-fatal error",
+                "Well-Link XR encountered a non-fatal error",
                 &warn_string,
                 msgbox::IconType::Info,
             )
@@ -98,7 +98,7 @@ fn show_e_block<E: Display>(e: E, blocking: bool) {
                 let err_string = err_string.clone();
                 move || {
                     msgbox::create(
-                        "ALVR encountered an error",
+                        "Well-Link XR encountered an error",
                         &err_string,
                         msgbox::IconType::Error,
                     )

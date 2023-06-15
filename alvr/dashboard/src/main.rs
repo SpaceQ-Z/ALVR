@@ -73,7 +73,7 @@ fn main() {
     }
 
     eframe::run_native(
-        &format!("ALVR Dashboard (streamer v{})", *ALVR_VERSION),
+        &format!("Well-Link XR Dashboard (streamer v{})", *ALVR_VERSION),
         NativeOptions {
             icon_data: Some(IconData {
                 rgba: image.rgba_data().to_owned(),

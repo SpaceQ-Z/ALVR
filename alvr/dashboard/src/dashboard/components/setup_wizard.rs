@@ -71,7 +71,7 @@ impl SetupWizard {
             ui.add_space(60.0);
             ui.vertical(|ui| {
                 ui.add_space(30.0);
-                ui.heading(RichText::new("Welcome to ALVR").size(30.0));
+                ui.heading(RichText::new("Welcome to Well-Link XR").size(30.0));
                 ui.add_space(5.0);
             });
             ui.with_layout(Layout::right_to_left(Align::Center), |ui| {
@@ -85,14 +85,14 @@ impl SetupWizard {
         match &self.page {
             Page::Welcome => page_content(
                 ui,
-                "This setup wizard will help you setup ALVR.",
+                "This setup wizard will help you setup Well-Link XR.",
                 "",
                 |_| (),
             ),
             Page::HardwareRequirements => page_content(
                 ui,
                 "Hardware requirements",
-                r"ALVR requires a dedicated and recent graphics card.
+                r"Well-Link XR requires a dedicated and recent graphics card.
 Make sure you have at least one output audio device.",
                 |_| (),
             ),
