@@ -139,7 +139,7 @@ This requires administrator rights!",
             Page::Recommendations => page_content(
                 ui,
                 "Recommendations",
-                r"ALVR supports multiple types of PC hardware and headsets but not all work correctly with default settings. For example some AMD video cards work only with the HEVC codec and GearVR does not support foveated encoding. Please try tweaking different settings if your ALVR experience is broken or not optimal.",
+                r"Well-Link XR supports multiple types of PC hardware and headsets but not all work correctly with default settings. For example some AMD video cards work only with the HEVC codec and GearVR does not support foveated encoding. Please try tweaking different settings if your Well-Link XR experience is broken or not optimal.",
                 |_| (),
             ),
             Page::Finished => page_content(
